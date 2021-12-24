@@ -7,7 +7,7 @@
 void main()
 {
    int i;
-   int gdriver = DETECT, gmode, errorcode;
+   int gdriver = DETECT, gmode;
    int xmax, ymax;
    initgraph(&gdriver, &gmode, "C:\\TURBOC3\\BGI");
    for(i=0;i<=620;i++)
