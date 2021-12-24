@@ -1,3 +1,4 @@
+
 #include<graphics.h>
 #include<stdlib.h>
 #include<stdio.h>
@@ -9,15 +10,14 @@ void main()
    int gdriver = DETECT, gmode, errorcode;
    int xmax, ymax;
    initgraph(&gdriver, &gmode, "C:\\TURBOC3\\BGI");
-
-   for(i=0;i<=640;i++)
+   for(i=0;i<=620;i++)
    {
      cleardevice();
 
    //for track
    line(0,450,640,450);
    line(0,475,640,475);
-   line(0,480,640,480);
+
 
    //for back
    rectangle(30+i,340,180+i,350);
@@ -26,6 +26,7 @@ void main()
    //for back wheels
    circle(70+i,437,12);
    circle(140+i,437,12);
+
 
    //for back incircle
    circle(70+i,437,8);
@@ -62,7 +63,7 @@ void main()
    //for front windows
    rectangle(220+i,335,240+i,365);
 
-   //for fire
+   //for engine top
    rectangle(300+i,300,330+i,340);
    rectangle(290+i,290,340+i,300);
 
@@ -72,21 +73,11 @@ void main()
 
    //for light
    rectangle(345+i,360,355+i,380);
-
-   //for hills
-   line(0,200,50,150);
-   line(50,150,150,200);
-   line(150,200,300,100);
-   line(300,100,450,175);
-   line(450,175,640,125);
-
-   //for sun
-   circle(475,75,25);
-
    delay(25);
    }
    getch();
    closegraph();
 
 }
+
 
